@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Andrii Lishchyna](https://up.htmlacademy.ru/htmlcss/33/user/1355283).
-* Наставник: `Неизвестно`.
+- Студент: [Andrii Lishchyna](https://up.htmlacademy.ru/htmlcss/33/user/1355283).
+- Наставник: Анатолий Пазюк.
 
 ---
 
