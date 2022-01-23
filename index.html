@@ -53,7 +53,7 @@
           <a class="navigation-link" href="quadrocopters.html">Квадрокоптеры</a>
         </li>
       </ul>
-      <ul class="navigation-list">
+      <ul class="navigation-list navigation-services">
         <li class="navigation-item">
           <a class="navigation-link" href="#delivery">Доставка</a>
         </li>
@@ -287,14 +287,68 @@
         длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
       </p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-        <input type="email" name="email" placeholder="Ваш e-mail">
+        <label class="visually-hidden" for="newsletter-email">Email</label>
+        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+          required>
         <button class="newsletter-btn" type="submit">Подписаться</button>
       </form>
       <span class="newsletter-slogan">Это бесплатно</span>
     </section>
   </main>
+
   <footer class="page-footer">
-    <section class=""></section>
+    <img class="logo footer-logo" src="" alt="логотип магазина гаджетов Device">
+    <section class="footer-address">
+      <h2 class="footer-address-title visually-hidden">Наш адрес</h2>
+      <address class="footer-contacts-address">
+        <p class="footer-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </p>
+      </address>
+    </section>
+
+    <section class="footer-services">
+      <h2 class="footer-services-title visually-hidden">Наши сервисы</h2>
+      <ul class="navigation-list navigation-services">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#delivery">Доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#guarantee">Гарантия</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="footer-phone">
+      <h2 class="footer-phone-title visually-hidden">Наш телефон</h2>
+      <address class="footer-contacts-phone">
+        <a class="contacts-phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+      </address>
+    </section>
+
+    <section class="footer-social">
+      <h2 class="footer-social-title visually-hidden">Социальные медиа</h2>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="social-btn" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-btn" href="https://www.instagram.com/htmlacademy">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-btn" href="https://www.twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
   </footer>
 </body>
 
