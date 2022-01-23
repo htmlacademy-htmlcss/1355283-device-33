@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>Моноподы для селфи</title>
 </head>
 
 <body>
@@ -87,9 +87,17 @@
             </ul>
         </header>
 
-        <section class="catalog-products">
-            <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <section class="catalog-products-filter">
+            <h2 class="catalog-products-title catalog-filters">Фильтр</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Стоимость</legend>
+                    <label class="price-range">
+                        <input type="range" min=0 max=10000 step=10 value=5000 name="price-range">
+                        <span class="range-from">От</span>
+                        <span class="range-to">До</span>
+                    </label>
+                </fieldset>
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Цвет</legend>
                     <ul class="filter-color-list">
@@ -129,14 +137,14 @@
                     <legend class="catalog-filter-title">Bluetooth</legend>
                     <ul class="filter-bluetooth-choice">
                         <li class="filter-bluetooth-choice-item">
-                            <label class="choice">
-                                <input class="choice-input" type="radio" name="yes" checked>
+                            <label class="bluetooth-choice">
+                                <input class="choice-input" type="radio" name="bluetooth-choice" value="yes">
                                 Есть
                             </label>
                         </li>
                         <li class="filter-bluetooth-choice-item">
-                            <label class="choice">
-                                <input class="choice-input" type="radio" name="no">
+                            <label class="bluetooth-choice">
+                                <input class="choice-input" type="radio" name="bluetooth-choice" value="no">
                                 Нет
                             </label>
                         </li>
@@ -144,6 +152,21 @@
                 </fieldset>
                 <button class="btn" type="submit">Показать</button>
             </form>
+        </section>
+
+        <section class="catalog-products-sort">
+            <h2 class="catalog-products-title catalog-sort">Сортировка</h2>
+            <select class="sort-control" aria-label="Сортировка">
+                <option value="popular">Популярное</option>
+                <option value="cheap">Дешёвое</option>
+                <option value="expensive">Дорогое</option>
+            </select>
+            <a class="btn arrow-up" href="#">
+                <span class="visually-hidden">От меньшей цены к большей</span>
+            </a>
+            <a class="btn arrow-down" href="#">
+                <span class="visually-hidden">От большой цены к меньшей</span>
+            </a>
         </section>
     </main>
     <footer class="page-footer">
