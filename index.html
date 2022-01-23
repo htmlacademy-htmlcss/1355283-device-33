@@ -61,13 +61,13 @@
       </ul>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="delivery.html">Доставка</a>
+          <a class="navigation-link" href="#delivery">Доставка</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="guarantee.html">Гарантия</a>
+          <a class="navigation-link" href="#guarantee">Гарантия</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="contacts.html">Контакты</a>
+          <a class="navigation-link" href="#contacts">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -127,7 +127,7 @@
           Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5
           кг.
         </p>
-        <button class="slider-detail" type="button">Подробнее</button>
+        <button class="btn slider-detail" type="button">Подробнее</button>
         <table class="table-gadget-properties">
           <tr>
             <td><b>8,5 м</b></td>
@@ -173,11 +173,72 @@
       <nav class="menu-nav">
         <ul class="menu-list">
           <li class="menu-list-item">
-            <span class="menu-item-logo">Очки виртуальной реальности</span>
+            <span class="menu-item-icon virtual">иконка очков виртуальной реальности</span>
             <a class="menu-link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="menu-list-item">
+            <span class="menu-item-icon monopod">иконка монопода для селфи</span>
+            <!-- Анатолий как ты думаешь, эта ссылка должна вести на страницу, например, monopods-for-selfy.html 
+            или же на catalog.html, так как указано в ТЗ.У меня возникли сомнения так как в ТЗ показан только один товар из
+            каталога, даже bradcrumbs-ы показывают структуру Главная>Каталог товаров>Моноподы для селфи. Тоесть ссылка по моему мнению должна вести  на  monopods-for-selfy.html а не на catalog.html  -->
+            <a class="menu-link" href="monopods-for-selfy.html">Моноподы для селфи</a>
+          </li>
+          <li class="menu-list-item">
+            <span class="menu-item-icon camera">иконка экшн-камеры</span>
+            <a class="menu-link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="menu-list-item">
+            <span class="menu-item-icon bracelet">иконка фитнес-браслетов</span>
+            <a class="menu-link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="menu-list-item">
+            <span class="menu-item-icon smartwatch">иконка умных часов</span>
+            <a class="menu-link" href="#">Умные часы</a>
+          </li>
+          <li class="menu-list-item">
+            <span class="menu-item-icon quadrocopter">иконка квадрокоптеров</span>
+            <a class="menu-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </nav>
+    </section>
+
+    <section class="services">
+      <h2 class="visually-hidden">Услуги</h2>
+      <ul class="services-btn-list">
+        <li class="btn-item" id="delivery">
+          <button class="btn services-btn" type="button">Доставка</button>
+        </li>
+        <li class="btn-item" id="guarantee">
+          <button class="btn services-btn" type="button">Гарантия</button>
+        </li>
+        <li class="btn-item">
+          <button class="btn services-btn" type="button">Кредит</button>
+        </li>
+      </ul>
+      <ul class="services-list">
+        <li class="services-item">
+          <h3 class="services-title">Доставка</h3>
+          <p class="services-describe">Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно! Ведь
+            мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <span class="services-icon icon-delivery visually-hidden">иконка доставщика</span>
+        </li>
+        <li class="services-item">
+          <h3 class="services-title">Гарантия</h3>
+          <p class="services-describe">Если из-за возгорания купленного у нас товара у вас
+            сгорит дом — не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же.</p>
+          <span class="services-icon icon-guarantee visually-hidden">иконка гарантии:разводной ключ и отвёртка </span>
+        </li>
+        <li class="services-item">
+          <h3 class="services-title">Кредит</h3>
+          <p class="services-describe">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+            наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+          <span class="services-icon icon-credit visually-hidden">иконка кредита:человечек который несет кредитную карту
+          </span>
+        </li>
+      </ul>
     </section>
 
   </main>
