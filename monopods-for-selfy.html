@@ -8,20 +8,18 @@
 
 <body>
     <header class="page-header">
-        <a class="header-logo-link" href="index.html">
-            <img class="logo" src="" alt="логотип магазина гаджетов Device">
-        </a>
+        <img class="logo" src="" alt="логотип магазина гаджетов Device">
+
+        <!--Вынес форму из навигации   -->
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input type="text" id="search-text" name="search-text" placeholder="Текст поиска">
+            <button class="btn-search-submit" type="submit">Найти</button>
+        </form>
+
         <nav class="navigation">
-            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input type="text" id="search-text" name="search-text" placeholder="Текст поиска">
-                <button class="btn-search-submit" type="submit">Найти</button>
-            </form>
             <ul class="navigation-list navigation-user">
                 <li class="navigation-item">
-                    <a class="navigation-link" href="">Коля Петухов</a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="">Выйти</a>
+                    <a class="navigation-link" href="">Войти</a>
                 </li>
                 <li class="navigation-item">
                     <a class="navigation-link" href="">Сравнить</a>
