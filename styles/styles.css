@@ -38,3 +38,65 @@ body {
   color: #444444;
   background-color: #ffffff;
 }
+
+/* Header */
+
+.page-header {
+  color: #000000;
+  background: #FFE17F;
+}
+
+.page-header a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-form {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.navigation-catalog {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.navigation-services {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+/* Main */
+.main-index .btn {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+/*Main/slider  */
+.image-describe b {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.table-gadget-properties b {
+  font-weight: 400;
+}
+
+.table-gadget-properties td {
+  font-size: 36px;
+  color: #000000;
+}
+
+.table-gadget-properties th {
+  font-size: 16px;
+  font-weight: 400;
+}
