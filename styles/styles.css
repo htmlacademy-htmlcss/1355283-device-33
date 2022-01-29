@@ -49,6 +49,10 @@ body {
   color: #000000;
 }
 
+.address {
+  font-style: normal;
+}
+
 /* Header */
 
 .page-header {
@@ -194,10 +198,6 @@ body {
   font-size: 24px;
 }
 
-.contacts-address {
-  font-style: normal;
-}
-
 .contacts-address .contacts-phone {
   color: #444444;
   text-decoration-line: underline;
@@ -221,6 +221,11 @@ body {
   text-decoration: none;
 }
 
-.footer-logo {
-  stroke: #FFC700;
+.navigation-link {
+  font-size: 18px;
+}
+
+.footer-contacts-phone .contacts-phone {
+  line-height: 20px;
+  text-decoration-line: underline;
 }
