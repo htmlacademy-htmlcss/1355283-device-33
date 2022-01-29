@@ -39,6 +39,16 @@ body {
   background-color: #ffffff;
 }
 
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
 /* Header */
 
 .page-header {
@@ -69,14 +79,15 @@ body {
 }
 
 /* Main */
-.main-index .btn {
+.main-index h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
+  font-size: 50px;
+  line-height: 50px;
   color: #000000;
+}
+
+.main-index a {
+  text-decoration: none;
 }
 
 /*Main/slider  */
@@ -99,4 +110,117 @@ body {
 .table-gadget-properties th {
   font-size: 16px;
   font-weight: 400;
+}
+
+/*Main/catalog-categories  */
+
+.categories-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 24px;
+  color: #000000;
+
+}
+
+/* Эксперементальное решение */
+.categories-link::before {
+  display: block;
+  content: "";
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+}
+
+.virtual::before {
+  background-image: url("../images/catalog-categories/virtual-reality.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.monopod::before {
+  background-image: url("../images/catalog-categories/monopods-for-selfy.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.camera::before {
+  background-image: url("../images/catalog-categories/action-cameras.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.bracelet::before {
+  background-image: url("../images/catalog-categories/fitness-bracelets.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.smartwatch::before {
+  background-image: url("../images/catalog-categories/smart-watches.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.quadrocopter::before {
+  background-image: url("../images/catalog-categories/quadrocopters.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+/*Main/services */
+.services {
+  background-color: #F0F0F0;
+}
+
+.services-item h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.rare-deliver-link {
+  font-size: 20px;
+  line-height: 23px;
+  background-color: #F0F0F0;
+}
+
+/* Main/index-columns */
+.delivery-item b {
+  line-height: 20px;
+  color: #000000;
+}
+
+.contacts-subtitle {
+  font-size: 24px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-address .contacts-phone {
+  color: #444444;
+  text-decoration-line: underline;
+}
+
+/* Main/newsletter */
+.newsletter {
+  background-color: #F0F0F0;
+}
+
+/* Page-footer */
+.page-footer {
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.page-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-logo {
+  stroke: #FFC700;
 }
