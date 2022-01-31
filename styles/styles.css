@@ -31,12 +31,23 @@
   font-display: swap;
 }
 
+:root {
+  --basic-black: #000000;
+  --basic-dark: #444444;
+  --basic-gray: #dcdcdc;
+  --basic-light-gray: #ebebeb;
+  --basic-light: #f0f0f0;
+  --basic-white: #ffffff;
+  --basic-yellow-light: #ffe17f;
+}
+
+
 body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  color: #444444;
-  background-color: #ffffff;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
 }
 
 .btn {
@@ -46,7 +57,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .address {
@@ -56,12 +67,12 @@ body {
 /* Header */
 
 .page-header {
-  color: #000000;
-  background: #FFE17F;
+  color: var(--basic-black);
+  background: var(--basic-yellow-light);
 }
 
 .page-header a {
-  color: #000000;
+  color: var(--basic-black);
   text-decoration: none;
 }
 
@@ -87,7 +98,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .main-index a {
@@ -99,7 +110,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .table-gadget-properties b {
@@ -108,7 +119,7 @@ body {
 
 .table-gadget-properties td {
   font-size: 36px;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .table-gadget-properties th {
@@ -121,7 +132,7 @@ body {
 .categories-link {
   font-family: "Raleway", sans-serif;
   line-height: 24px;
-  color: #000000;
+  color: var(--basic-black);
 
 }
 
@@ -131,7 +142,7 @@ body {
   content: "";
   width: 160px;
   height: 160px;
-  background-color: #FFE17F;
+  background-color: var(--basic-yellow-light);
 }
 
 .virtual::before {
@@ -172,26 +183,26 @@ body {
 
 /*Main/services */
 .services {
-  background-color: #F0F0F0;
+  background-color: var(--basic-light);
 }
 
 .services-item h3 {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .rare-deliver-link {
   font-size: 20px;
   line-height: 23px;
-  background-color: #F0F0F0;
+  background-color: var(--basic-light);
 }
 
 /* Main/index-columns */
 .delivery-item b {
   line-height: 20px;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .contacts-subtitle {
@@ -199,25 +210,25 @@ body {
 }
 
 .contacts-address .contacts-phone {
-  color: #444444;
+  color: var(--basic-dark);
   text-decoration-line: underline;
 }
 
 /* Main/newsletter */
 .newsletter {
-  background-color: #F0F0F0;
+  background-color: var(--basic-light);
 }
 
 /* Page-footer */
 .page-footer {
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
-  background-color: #444444;
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
 }
 
 .page-footer a {
-  color: #ffffff;
+  color: var(--basic-white);
   text-decoration: none;
 }
 
@@ -233,11 +244,11 @@ body {
 /* Monopods-for-selfy */
 
 .main-inner {
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .main-inner-wrap {
-  background-color: #F0F0F0;
+  background-color: var(--basic-light);
 
 }
 
@@ -275,11 +286,11 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .catalog-products-wrap {
-  background-color: #ffffff;
+  background-color: var(--basic-white);
 }
 
 .product-card-link {
@@ -295,7 +306,7 @@ body {
 
 .product-card-price {
   line-height: 21px;
-  color: #444444;
+  color: var(--basic-dark);
 }
 
 .load-more-products {
@@ -304,14 +315,14 @@ body {
 }
 
 .pagination-products {
-  background-color: #EBEBEB;
+  background-color: var(--basic-light-gray);
 }
 
 .pagination-products a {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: #444444;
+  color: var(--basic-dark);
 }
 
 .pagination-products .btn {
