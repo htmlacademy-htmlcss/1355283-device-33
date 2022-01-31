@@ -1,0 +1,321 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Raleway  */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.address {
+  font-style: normal;
+}
+
+/* Header */
+
+.page-header {
+  color: #000000;
+  background: #FFE17F;
+}
+
+.page-header a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-form {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.navigation-catalog {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.navigation-services {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+/* Main */
+.main-index h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.main-index a {
+  text-decoration: none;
+}
+
+/*Main/slider  */
+.image-describe b {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.table-gadget-properties b {
+  font-weight: 400;
+}
+
+.table-gadget-properties td {
+  font-size: 36px;
+  color: #000000;
+}
+
+.table-gadget-properties th {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*Main/catalog-categories  */
+
+.categories-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 24px;
+  color: #000000;
+
+}
+
+/* Эксперементальное решение */
+.categories-link::before {
+  display: block;
+  content: "";
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+}
+
+.virtual::before {
+  background-image: url("../images/catalog-categories/virtual-reality.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.monopod::before {
+  background-image: url("../images/catalog-categories/monopods-for-selfy.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.camera::before {
+  background-image: url("../images/catalog-categories/action-cameras.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.bracelet::before {
+  background-image: url("../images/catalog-categories/fitness-bracelets.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.smartwatch::before {
+  background-image: url("../images/catalog-categories/smart-watches.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.quadrocopter::before {
+  background-image: url("../images/catalog-categories/quadrocopters.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+/*Main/services */
+.services {
+  background-color: #F0F0F0;
+}
+
+.services-item h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.rare-deliver-link {
+  font-size: 20px;
+  line-height: 23px;
+  background-color: #F0F0F0;
+}
+
+/* Main/index-columns */
+.delivery-item b {
+  line-height: 20px;
+  color: #000000;
+}
+
+.contacts-subtitle {
+  font-size: 24px;
+}
+
+.contacts-address .contacts-phone {
+  color: #444444;
+  text-decoration-line: underline;
+}
+
+/* Main/newsletter */
+.newsletter {
+  background-color: #F0F0F0;
+}
+
+/* Page-footer */
+.page-footer {
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.page-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-link {
+  font-size: 18px;
+}
+
+.footer-contacts-phone .contacts-phone {
+  line-height: 20px;
+  text-decoration-line: underline;
+}
+
+/* Monopods-for-selfy */
+
+.main-inner {
+  color: #000000;
+}
+
+.main-inner-wrap {
+  background-color: #F0F0F0;
+
+}
+
+.inner-header-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-inner h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.catalog-filter-group li {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.sort-control {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.catalog-products-wrap {
+  background-color: #ffffff;
+}
+
+.product-card-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.product-card-link h3 {
+  font-size: inherit;
+}
+
+.product-card-price {
+  line-height: 21px;
+  color: #444444;
+}
+
+.load-more-products {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.pagination-products {
+  background-color: #EBEBEB;
+}
+
+.pagination-products a {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #444444;
+}
+
+.pagination-products .btn {
+  font-size: 18px;
+  line-height: 21px;
+  color: inherit;
+}
