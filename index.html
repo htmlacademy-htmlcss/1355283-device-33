@@ -11,66 +11,72 @@
   <header class="page-header">
     <img class="logo" src="/images/logo.svg" width="145" height="36" alt="логотип магазина гаджетов Device">
 
-    <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-      <input type="text" id="search-text" name="search-text" placeholder="Текст поиска">
-      <button class="btn-search-submit" type="submit">Найти</button>
-    </form>
-
     <nav class="navigation">
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link" href="">Войти</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="">Сравнить</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="">Корзина</a>
-        </li>
-      </ul>
-      <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="catalog">Каталог товаров</label>
-        <button class="catalog-list-opened" id="catalog" name="catalog" type="button">
-          Плюс
-        </button>
-      </form>
-      <ul class="navigation-list navigation-catalog visually-hidden">
-        <li class="navigation-item">
-          <a class="navigation-link" href="virtual-reality.html">Виртуальная реальность
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="monopods-for-selfy.html">Моноподы для cелфи
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="action-cam.html">Экшн-камеры</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="fitnes-bracelets.html">Фитнес-браслеты</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="smart-watch.html">Умные часы</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="quadrocopters.html">Квадрокоптеры</a>
-        </li>
-      </ul>
-      <ul class="navigation-list navigation-services">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#delivery">Доставка</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#guarantee">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#contacts">Контакты</a>
-        </li>
-      </ul>
+
+      <div class="navigation-user-wrapper">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+          <input type="text" id="search-text" name="search-text" placeholder="Текст поиска">
+          <button class="btn-search-submit" type="submit">Найти</button>
+        </form>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="">Войти</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="">Сравнить</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="">Корзина</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navigation-catalog-wrapper">
+
+        <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="catalog">Каталог товаров</label>
+          <button class="catalog-list-opened" id="catalog" name="catalog" type="button">
+            Плюс
+          </button>
+        </form>
+        <ul class="navigation-list navigation-catalog visually-hidden">
+          <li class="navigation-item">
+            <a class="navigation-link" href="virtual-reality.html">Виртуальная реальность
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="monopods-for-selfy.html">Моноподы для cелфи
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="action-cam.html">Экшн-камеры</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="fitnes-bracelets.html">Фитнес-браслеты</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="smart-watch.html">Умные часы</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="quadrocopters.html">Квадрокоптеры</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-services">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#delivery">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#guarantee">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <main class="main-index">
+  <main class="main-index main-container">
     <h1 class="visually-hidden">Магазин гаджетов Device.Главная страница</h1>
 
     <section class="gadgets-slider">
