@@ -466,6 +466,10 @@ body {
 }
 
 .main-inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: var(--basic-width);
+  margin: 0 auto;
   background-color: var(--basic-light);
 
 }
@@ -490,6 +494,10 @@ body {
   text-transform: uppercase;
 }
 
+.catalog-products-filter {
+  width: 320px;
+}
+
 .catalog-filter-title {
   font-weight: 800;
   line-height: 20px;
@@ -498,6 +506,10 @@ body {
 .catalog-filter-group li {
   font-size: 16px;
   line-height: 19px;
+}
+
+.catalog-products-sort {
+  width: 840px;
 }
 
 .sort-control {
