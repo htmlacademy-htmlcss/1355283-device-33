@@ -41,8 +41,16 @@
   --basic-yellow-light: #ffe17f;
 }
 
+html {
+  height: 100%;
+}
+
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -67,6 +75,8 @@ body {
 /* Header */
 
 .page-header {
+  width: 1160px;
+  margin: 0 auto;
   color: var(--basic-black);
   background: var(--basic-yellow-light);
 }
@@ -76,24 +86,68 @@ body {
   text-decoration: none;
 }
 
+.search-form {
+  display: flex;
+  width: 520px;
+  align-items: flex-start;
+}
+
+.search-form input[type="text"] {
+  width: 360px;
+}
+
+.btn-search-submit {
+  width: 160px;
+}
+
 .catalog-form {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   text-transform: uppercase;
 }
 
+.navigation {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-user-wrapper {
+  width: inherit;
+  display: flex;
+}
+
+.navigation-list.navigation-user {
+  margin-left: auto;
+}
+
+.navigation-catalog-wrapper {
+  width: inherit;
+  display: flex;
+}
+
+
 .navigation-catalog {
   font-size: 16px;
   line-height: 18px;
 }
 
-.navigation-services {
+.navigation-list.navigation-services {
+  margin-left: auto;
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   text-transform: uppercase;
 }
 
 /* Main */
+.main-conteiner {
+  flex-grow: 1;
+}
+
 .main-index h2 {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
