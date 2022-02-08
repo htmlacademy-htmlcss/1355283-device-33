@@ -59,6 +59,17 @@ body {
   background-color: var(--basic-white);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .btn {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -73,11 +84,14 @@ body {
   font-style: normal;
 }
 
+
 /* Header */
 
 .page-header {
   width: var(--basic-width);
   margin: 0 auto;
+  margin-top: 40px;
+  padding-left: 40px;
   color: var(--basic-black);
   background: var(--basic-yellow-light);
 }
@@ -87,61 +101,114 @@ body {
   text-decoration: none;
 }
 
+
 .search-form {
   display: flex;
-  width: 520px;
+  /* width: 520px; */
   align-items: flex-start;
 }
 
 .search-form input[type="text"] {
+  box-sizing: border-box;
   width: 360px;
+  height: 40px;
 }
 
 .btn-search-submit {
   width: 160px;
+  height: 40px;
+  margin-right: 26px;
 }
 
 .catalog-form {
+  padding: 15px 0;
   font-family: "Raleway", sans-serif;
   line-height: 21px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .navigation {
   width: 1040px;
-  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .navigation ul {
+  display: flex;
   padding: 0;
   margin: 0;
+  list-style-type: none;
+
+}
+
+.navigation-link {
+  display: block;
 }
 
 .navigation-user-wrapper {
   display: flex;
   width: inherit;
+  margin-bottom: 30px;
 }
 
 .navigation-list.navigation-user {
-  margin-left: auto;
+  /* margin-left: auto; */
+  width: 523px;
+  align-items: center;
 }
+
+.navigation-user .navigation-item:first-child {
+  box-sizing: border-box;
+  width: 231px;
+  padding-left: 27px;
+  margin-right: 26px;
+  text-align: left;
+}
+
+.navigation-user .navigation-item {
+  width: 105px;
+  text-align: right;
+  flex-grow: 1;
+}
+
+.navigation-user .navigation-item:last-child {
+  width: 135px;
+}
+
 
 .navigation-catalog-wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: inherit;
+  padding-bottom: 135px;
 }
 
 
-.navigation-catalog {
+.navigation-list.navigation-catalog {
+  min-height: 120px;
+  order: 1;
+  padding-top: 14px;
+  padding-bottom: 27px;
   font-size: 16px;
   line-height: 18px;
 }
 
 .navigation-list.navigation-services {
+  min-width: 471px;
+  justify-content: space-between;
   margin-left: auto;
   font-family: "Raleway", sans-serif;
   line-height: 21px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.navigation-services .navigation-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.navigation-services a {
+  padding: 15px 0;
 }
 
 /* Main */
