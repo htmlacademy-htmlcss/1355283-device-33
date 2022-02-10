@@ -9,7 +9,9 @@
 
 <body>
     <header class="page-header">
-        <img class="logo" src="/images/logo.svg" width="145" height="36" alt="логотип магазина гаджетов Device">
+        <a href="index.html">
+            <img class="logo" src="/images/logo.svg" width="145" height="36" alt="логотип магазина гаджетов Device">
+        </a>
 
         <nav class="navigation">
 
@@ -19,14 +21,20 @@
                     <button class="btn-search-submit" type="submit">Найти</button>
                 </form>
                 <ul class="navigation-list navigation-user">
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="">Войти</a>
+                    <li class="navigation-item visually-hidden">
+                        <a class="navigation-link navigation-user-link" href="">Войти</a>
+                    </li>
+                    <li class="navigation-item navigation-item-user">
+                        <a class="navigation-link navigation-user-link" href="">Коля Петухов</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="">Сравнить</a>
+                        <a class="navigation-link navigation-user-link" href="">Выйти</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="">Корзина</a>
+                        <a class="navigation-link navigation-user-link" href="">Сравнить</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-user-link" href="">Корзина</a>
                     </li>
                 </ul>
             </div>
@@ -41,36 +49,40 @@
                 </form>
                 <ul class="navigation-list navigation-catalog visually-hidden">
                     <li class="navigation-item">
-                        <a class="navigation-link" href="virtual-reality.html">Виртуальная реальность
+                        <a class="navigation-link navigation-catalog-link" href="virtual-reality.html">Виртуальная
+                            реальность
                         </a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="monopods-for-selfy.html">Моноподы для cелфи
+                        <a class="navigation-link navigation-catalog-link" href="monopods-for-selfy.html">Моноподы для
+                            cелфи
                         </a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="action-cam.html">Экшн-камеры</a>
+                        <a class="navigation-link navigation-catalog-link" href="action-cam.html">Экшн-камеры</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="fitnes-bracelets.html">Фитнес-браслеты</a>
+                        <a class="navigation-link navigation-catalog-link"
+                            href="fitnes-bracelets.html">Фитнес-браслеты</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="smart-watch.html">Умные часы</a>
+                        <a class="navigation-link navigation-catalog-link" href="smart-watch.html">Умные часы</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="quadrocopters.html">Квадрокоптеры</a>
+                        <a class="navigation-link navigation-catalog-link" href="quadrocopters.html">Квадрокоптеры</a>
                     </li>
                 </ul>
                 <ul class="navigation-list navigation-services">
                     <li class="navigation-item">
-                        <a class="navigation-link" href="#delivery">Доставка</a>
+                        <a class="navigation-link navigation-services-link" href="#delivery">Доставка</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="#guarantee">Гарантия</a>
+                        <a class="navigation-link navigation-services-link" href="#guarantee">Гарантия</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="#contacts">Контакты</a>
+                        <a class="navigation-link navigation-services-link" href="#contacts">Контакты</a>
                     </li>
+
                 </ul>
             </div>
         </nav>
@@ -163,18 +175,20 @@
                 </section>
 
                 <section class="catalog-products-sort">
-                    <h2 class="catalog-products-title catalog-sort">Сортировка</h2>
-                    <select class="sort-control" aria-label="Сортировка">
-                        <option value="popular">Популярное</option>
-                        <option value="cheap">Дешёвое</option>
-                        <option value="expensive">Дорогое</option>
-                    </select>
-                    <a class="btn arrow-up" href="#">
-                        <span class="visually-hidden">От меньшей цены к большей</span>
-                    </a>
-                    <a class="btn arrow-down" href="#">
-                        <span class="visually-hidden">От большой цены к меньшей</span>
-                    </a>
+                    <div class="catalog-products-sort-container">
+                        <h2 class="catalog-products-title catalog-sort">Сортировка:</h2>
+                        <select class="sort-control" aria-label="Сортировка">
+                            <option value="popular">Популярные</option>
+                            <option value="cheap">Дешёвые</option>
+                            <option value="expensive">Дорогие</option>
+                        </select>
+                        <a class="btn arrow-up" href="#">
+                            <span class="visually-hidden">От меньшей цены к большей</span>
+                        </a>
+                        <a class="btn arrow-down" href="#">
+                            <span class="visually-hidden">От большой цены к меньшей</span>
+                        </a>
+                    </div>
 
                     <div class="catalog-products-wrap">
                         <ul class="product-cards-list">
@@ -263,13 +277,13 @@
                     <h2 class="footer-services-title visually-hidden">Наши сервисы</h2>
                     <ul class="navigation-list footer-navigation-services">
                         <li class="navigation-item">
-                            <a class="navigation-link" href="#delivery">Доставка</a>
+                            <a class="footer-navigation-link" href="#delivery">Доставка</a>
                         </li>
                         <li class="navigation-item">
-                            <a class="navigation-link" href="#guarantee">Гарантия</a>
+                            <a class="footer-navigation-link" href="#guarantee">Гарантия</a>
                         </li>
                         <li class="navigation-item">
-                            <a class="navigation-link" href="#contacts">Контакты</a>
+                            <a class="footer-navigation-link" href="#contacts">Контакты</a>
                         </li>
                     </ul>
                 </section>
