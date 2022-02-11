@@ -309,7 +309,7 @@ body {
 
 }
 
-/* Эксперементальное решение */
+
 .categories-link::before {
   display: block;
   content: "";
